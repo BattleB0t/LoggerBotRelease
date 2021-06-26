@@ -393,7 +393,7 @@ log.send(embed);
 
 } catch (error) {
   if (error instanceof TypeError) {
-    return console.log(`TypeError, someone may have the server while a log while executing. Error 19: ${error}. User ${userNumber}: ${dbUserData.discordID} | ${dbUserData.discordUsername} | UUID: ${dbUserData.minecraftUUID}`)
+    return console.log(`TypeError, someone may have left the server while a log while executing. Error 19: ${error}. User ${userNumber}: ${dbUserData.discordID} | ${dbUserData.discordUsername} | UUID: ${dbUserData.minecraftUUID}`)
   }
   try {
     const otherError = new Discord.MessageEmbed()
